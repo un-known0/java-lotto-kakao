@@ -25,9 +25,9 @@ public class OutputView {
         System.out.printf("총 수익률은 %.2f입니다.", rate);
         if (rate < 1) {
             System.out.println("(기준이 1이기 때문에 결과적으로 손해라는 의미임)");
-        } else {
-            System.out.println();
+            return;
         }
+        System.out.println();
     }
 
 }
