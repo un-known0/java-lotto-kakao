@@ -39,7 +39,6 @@ public class LottoController {
 
         Money totalPrize = winningInfo.totalPrice();
         double rateOfReturn = wallet.returnRate(totalPrize);
-        wallet.settle(totalPrize);
         outputView.printRateOfReturn(rateOfReturn);
     }
 

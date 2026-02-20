@@ -23,7 +23,7 @@ public class LottoTicket {
 
     public LottoTicket(Set<LottoNumber> lottoNumbers) {
         validateSize(lottoNumbers);
-        this.lottoNumbers = lottoNumbers;
+        this.lottoNumbers = new TreeSet<>(lottoNumbers);
     }
 
     private static Set<LottoNumber> toLottoNumberSet(Integer... numbers) {
